@@ -15,9 +15,7 @@ body {
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
-.main-container {
-  margin-top: 53px;
-}
+
 nav {
   position: fixed;
   top: 0;
@@ -44,7 +42,23 @@ nav a {
 nav a:hover {
   color: #ffd700;
 }
-h1 {
+.tweets-page {
+  margin-top: 53px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  place-items: center;
+  justify-content: center;
+}
+article {
+  place-items: center;
+  justify-content: center;
+  position: relative;
+  overflow-y: scroll;
+}
+article h1 {
+  text-align: center;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem 2rem;
   margin-bottom: 1rem;
@@ -52,15 +66,12 @@ h1 {
 }
 
 .tweet-container {
-  overflow: hidden;
-  width: 100%;
   padding: 1rem 0;
   background: #111;
-  overflow-x: scroll;
   scrollbar-width: none;
 }
 .scroll-track {
-  display: flex;
+  display: grid;
   width: max-content;
   gap: 2rem;
   overflow-x: auto;
@@ -117,6 +128,20 @@ footer a:hover {
 }
 .socials a:hover {
   color: #ffd700;
+}
+aside {
+  max-width: fit-content;
+  height: 495px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+aside img {
+  width: fit-content;
+  height: 530px;
+  overflow: hidden;
+  background: none;
 }
 /* @keyframes scroll {
   0% {

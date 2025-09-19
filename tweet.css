@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("tanner-van-dera.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #222;
+  background-attachment: fixed;
+}
+.page1-main-container {
+  margin-top: 53px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  place-items: center;
+  justify-content: center;
+}
+article {
+  place-items: center;
+  justify-content: center;
+}
+article h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  padding-bottom: 5rem;
+}
+.page1-main-container button {
+  align-items: center;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+  position: fixed;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.socials {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  font-size: 1.5rem;
+}
+.socials a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.socials a:hover {
+  color: #ffd700;
+}
+aside {
+  max-width: fit-content;
+  height: 495px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+aside img {
+  width: fit-content;
+  height: 530px;
+  overflow: hidden;
+  background: none;
+}

@@ -49,6 +49,12 @@ main {
   text-align: center;
   max-width: 800px;
   margin: auto;
+  margin-top: 53px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  place-items: center;
+  justify-content: center;
 }
 
 section {
@@ -157,4 +163,18 @@ footer a:hover {
 }
 .socials a:hover {
   color: #ffd700;
+}
+aside {
+  max-width: fit-content;
+  height: 495px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+aside img {
+  width: fit-content;
+  height: 530px;
+  overflow: hidden;
+  background: none;
 }
